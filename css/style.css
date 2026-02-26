@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* EDITOR NOTE BY MistyCode Lab :    BUTTON */
+/* EDITOR NOT BY MistyCode Lab : BUTTON */
 .btn {
   display: inline-block;
   padding: 12px 20px;
@@ -23,26 +23,22 @@ body {
   margin-top: 10px;
 }
 
-/* EDITOR NOTE BY MistyCode Lab :  DESKRIPSI BOX */
-.description {
+/* EDITOR NOT BY MistyCode Lab : BOX */
+.box {
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  margin-top: 20px;
+  margin-bottom: 15px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.description h2 {
-  margin-bottom: 10px;
-}
-
-/* EDITOR NOTE BY MistyCode Lab :   HERO */
+/* EDITOR NOT BY MistyCode Lab : HERO */
 .hero {
   text-align: center;
   padding: 40px 20px;
 }
 
-/* EDITOR NOTE BY MistyCode Lab :  PORTFOLIO */
+/* EDITOR NOT BY MistyCode Lab : PORTFOLIO */
 .portfolio {
   margin-top: 40px;
 }
@@ -56,8 +52,10 @@ body {
 .card img {
   width: 100%;
   border-radius: 8px;
+  display: block;
 }
-/* FORM */
+
+/* EDITOR NOT BY MistyCode Lab : FORM */
 .form-container {
   max-width: 500px;
   margin: 0 auto;
@@ -86,15 +84,30 @@ textarea {
   color: #555;
 }
 
+/* EDITOR NOT BY MistyCode Lab : RESPONSIVE HP */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 12px;
+  }
 
-.card img {
-  display: block;
-}
+  .hero {
+    padding: 20px 10px;
+  }
 
-.box {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  .description {
+    padding: 12px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
 }
